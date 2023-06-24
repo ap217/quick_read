@@ -39,7 +39,7 @@ class FetchNews {
     var sourceID = sourcesId[_random.nextInt(sourcesId.length)];
 
     Response response = await get(Uri.parse(
-        "https://newsapi.org/v2/top-headlines?sources=$sourceID&apiKey=API_KEY"));
+        "https://newsapi.org/v2/top-headlines?sources=$sourceID&apiKey=0db7a9877e6a45e2811895ce643934b7"));
 
     Map body_data = jsonDecode(response.body);
     List articles = body_data["articles"];
